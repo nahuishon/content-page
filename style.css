@@ -83,7 +83,7 @@ body{
 .slider {
   display: flex;
   height: 100%;
-  width: 400%;
+  width: 500%;
 }
 .slider p{
   flex-basis: 100%;
@@ -112,7 +112,7 @@ body{
 .arrow i {
   font-size: 70px;
   -webkit-user-select: none;
-  color: #f6f7f9;
+  color: #fefefe;
 }
 .left {
   left: 10px;
@@ -134,7 +134,7 @@ body{
   width: 10px;
   height: 10px;
   background: #333;
-  border: 2px solid #333;
+  border: 2px solid rgb(120, 120, 120);
   border-radius: 50px;
   margin: 10px;
   cursor: pointer;
