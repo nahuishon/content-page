@@ -96,12 +96,14 @@ body{
   margin-left:150px;
   margin-right:150px;
 }
+
+
 .slider section {
   flex-basis: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 16px;
+  font-size: 15px;
 }
 .left, .right {
   position: absolute;
@@ -142,6 +144,7 @@ body{
 .control ul li.selected {
   background: transparent;
 }
+
 
 
 
