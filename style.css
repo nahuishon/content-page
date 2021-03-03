@@ -155,43 +155,83 @@ body{
     text-align: center; /* If you want the text to be left-aligned on small screens */
   }
 
-  .slider{
-    text-align: center;
-     color: aliceblue;
-     font-size: 18px;
-     font-family: 'Spinnaker', sans-serif;
-     text-decoration: none;
-     margin-top: 50px;
-}
-
-  .slider p{
-    text-align: center;
-     color: rgb(255, 255, 255);
-     font-size: 10px;
-     margin-top: 200px;
-     margin-bottom: 150px;
-     text-decoration: none;
-      }
-
-
-.next a{
-  border: 10px solid #ffffff;
-  color: #ffffff;
-  align-items: center;
-  font-size: 15px;
-  transition:  all 0.4s;
-  background-color: rgb(0, 0, 0);
-  width: 30px;
-  padding: 40px;
-  margin-bottom: 10px;
-  border: 2px solid rgb(255, 255, 255);
-  text-decoration: none;
-  text-align: center;
-}
-
-.next:hover {
-  margin-top: -0.2rem;
+  .container {
+    width: 80%;
+    margin:20px auto;
   }
-}
+  .carousel {
+    border: 2px solid #ffffff;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .slider {
+    display: flex;
+    height: 100%;
+    width: 500%;
+  }
+  .slider p{
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 15px;
+    margin-top:30px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  
+  
+  .slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+  }
+  .left, .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .arrow i {
+    font-size: 70px;
+    -webkit-user-select: none;
+    color: #fefefe;
+  }
+  .left {
+    left: 10px;
+  }
+  .right {
+    right: 10px;
+  }
+  .control ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%);
+  }
+  .control ul li {
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border: 2px solid rgb(120, 120, 120);
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .control ul li.selected {
+    background: transparent;
+  }
+
 
 
