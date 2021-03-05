@@ -136,93 +136,238 @@ section{
   color: aquamarine;
 }
 
+/* target only screens up to 1222px */
+@media only screen and (max-width: 1222px){
 
+  .topnav a {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+    font-family:'Spinnaker', sans-serif;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%; 
+    text-align: center; /* If you want the text to be centered */
+         }
 
+   .dropdown {
+     float: left;
+     overflow: hidden;
+        }
+        
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #000000;
+     min-width: 10px;
+     box-shadow: 0px 8px 5px 5px rgba(232, 247, 145, 0.2);
+     z-index: 1;
+        }
+  
+    .dropdown-content a {
+     float: none;
+     color: rgb(255, 255, 255);
+     padding: 30px 35px;
+     font-size: 18px;
+     font-family:'Spinnaker', sans-serif;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+     margin-left: 25px;
+        }
+
+     .dropdown-content a:hover {
+       background-color: rgb(255, 255, 255);
+       color: black;
+        }
+        
+     .dropdown:hover .dropdown-content {
+      display: block;
+        }
+
+        html,body {
+          height: 100%;
+          scroll-behavior: smooth;
+          margin: 0;
+          font-family: 'Spinnaker', sans-serif;
+          background: rgb(255, 255, 255);
+        }
+        
+        h1{
+          text-align: center;
+          margin-left: 50px;
+          position: relative;
+          top:50; left:5%;
+          color:rgb(29, 29, 29);
+        }
+        
+        h2{
+            text-align: center;
+            margin-left: 50px;
+            margin-top: 10px;
+            position: relative;
+            top:65; left:5%;
+            color:rgb(9, 9, 9);
+          }
+        
+        
+        ul{
+          list-style: none;
+          height: 100%;
+          width: 190px;
+          position:fixed;
+          top:46; left:20;
+          background: rgb(18, 14, 14);
+          box-shadow: 2px 0px 5px rgb(11, 11, 11);
+        }
+        
+        ul li{
+          margin:25px;
+          padding:1px;
+          margin-top:105px;
+        }
+        ul li a {
+          color:rgb(255, 255, 255);
+          text-decoration: none;
+          font-size:20px;
+          padding:5px;
+        }
+        ul li a:hover{
+          background:rgb(255, 255, 255);
+          color:rgb(23, 22, 22);
+        }
+        section{
+          height:90vh;
+          width: 550px;
+          font-size: 21px;
+          position: relative;
+          line-height: 32px;
+          text-align: left;
+          font-family: 'Spinnaker', sans-serif;
+          margin-left: 290px;
+          word-spacing: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         
+        }
+        .span.ingredient{
+          color: aquamarine;
+        }
+      }
 /* Extra small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
   
   .topnav a {
     float: left;
     display: block;
-    width: 25.33%;  /* three links of equal widths */
-    text-align: center; /* If you want the text to be left-aligned on small screens */
+    width: 28.33%;  /* three links of equal widths */
+    text-align: left; /* If you want the text to be left-aligned on small screens */
   }
 
-  .container {
-    width: 80%;
-    margin:20px auto;
-  }
-  .carousel {
-    border: 2px solid #ffffff;
-    height: 800px;
+  .dropdown {
+    float: left;
     overflow: hidden;
-    position: relative;
-    border-radius: 5px;
-    background: rgb(0, 0, 0);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .slider {
-    display: flex;
-    height: 100%;
-    width: 500%;
-  }
-  .slider p{
-    flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: white;
-    font-size: 15px;
-    margin-top:30px;
-    margin-left:50px;
-    margin-right:50px;
-  }
-  
-  
-  .slider section {
-    flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 15px;
-  }
-  .left, .right {
+       }
+       
+  .dropdown-content {
+    display: none;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  .arrow i {
-    font-size: 70px;
-   user-select: none;
-    color: #fefefe;
-  }
-  .left {
-    left: 10px;
-  }
-  .right {
-    right: 10px;
-  }
-  .control ul {
-    list-style: none;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%);
-  }
-  .control ul li {
-    width: 10px;
-    height: 10px;
-    background: #333;
-    border: 2px solid rgb(120, 120, 120);
-    border-radius: 50px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  .control ul li.selected {
-    background: transparent;
-  }
-}
+    background-color: #000000;
+    min-width: 20px;
+    z-index: 1;
+       }
+ 
+   .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: 15px;
+    font-family:'Spinnaker', sans-serif;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-left: 5px;
+       }
+
+    .dropdown-content a:hover {
+      background-color: rgb(255, 255, 255);
+      color: black;
+       }
+       
+    .dropdown:hover .dropdown-content {
+     display: block;
+       }
+
+      html,body {
+        height: 100%;
+        scroll-behavior: smooth;
+        margin: 0;
+        font-family: 'Spinnaker', sans-serif;
+        background: rgb(255, 255, 255);
+      }
+      
+      h1{
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        top:35; left:10%;
+        color:rgb(29, 29, 29);
+      }
+      
+      h2{
+          text-align: center;
+          margin-top: 10px;
+          position: relative;
+          top:35; left:10%;
+          color:rgb(9, 9, 9);
+          font-family: 12px;
+          font-size: 12px;
+        }
+      
+      
+      ul{
+        list-style: none;
+        height: 100%;
+        width: 120px;
+        position:fixed;
+        top:40; left:0;
+        background: rgb(18, 14, 14);
+        box-shadow: 2px 0px 5px rgb(11, 11, 11);
+      }
+      
+      ul li{
+        margin:5px;
+        padding:1px;
+        margin-top:85px;
+      }
+      ul li a {
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        margin-right: 10px;
+        font-size:15px;
+      }
+      ul li a:hover{
+        background:rgb(255, 255, 255);
+        color:rgb(23, 22, 22);
+      }
+      section{
+        height:90vh;
+        width: 250px;
+        font-size: 12px;
+        position: relative;
+        line-height: 18px;
+        text-align: left;
+        font-family: 'Spinnaker', sans-serif;
+        margin-left: 140px;
+        word-spacing: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+      }
+      .span.ingredient{
+        color: aquamarine;
+      }
+    }
