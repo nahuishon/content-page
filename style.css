@@ -142,7 +142,7 @@ html,body {
   }
   .arrow i {
     font-size: 70px;
-    -webkit-user-select: none;
+   user-select: none;
     color: #fefefe;
   }
   .left {
@@ -173,3 +173,4 @@ html,body {
   .control ul li.selected {
     background: transparent;
   }
+}
